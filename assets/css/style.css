@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 20vh;
+  min-height: 100vh;
+  background: radial-gradient(#fff, #ccc);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.controls {
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.controls ._btns {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.controls ._btns div {
+  background: transparent;
+  padding: 0;
+  display: inline-block;
+}
+
+.controls ._btns div button {
+  display: block;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  background: cornflowerblue;
+}
+
+.controls ._btns div button span {
+  color: #fff;
+  font-size: 20px;
+}
+
+#cont-prosas {
+  padding: 0 20%;
+}
+
+#cont-prosas #id {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-style: normal;
+}
+
+#cont-prosas #prosas {
+  padding: 10px;
+  font-family: monospace;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+._cita {
+  padding: 0 20%;
+  margin-top: 50px;
+}
+
+.cita {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.cita .libro,
+.cita .autor {
+  display: block;
+  color: #222;
+  line-height: 1;
+}
+
+.cita .libro {
+  font-style: italic;
+  font-size: 28px;
+}
+
+.cita .autor {
+  margin-right: 15px;
+  font-size: 18px;
+  font-style: normal;
+  color: #555;
+}
+
+.version {
+  text-align: center;
+}
+
+.version ._cita {
+  margin-top: 10px;
+  margin-bottom: 7vh;
+}
+
+.version .cita {
+  text-align: center;
+}
+
+.version .cita .autor {
+  margin-right: 0;
+}
+
+.version img {
+  width: 40vh;
+}
+
+@media (max-width: 690px) {
+  body {
+    padding-top: 10vh;
+  }
+  #cont-prosas {
+    padding: 0 7%;
+  }
+  #cont-prosas #prosas {
+    font-size: 14px;
+  }
+  ._cita {
+    padding: 5px 7%;
+    text-align: right;
+    margin-top: 15px;
+  }
+  .cita .libro {
+    font-size: 24px;
+  }
+  .cita .autor {
+    font-size: 14px;
+  }
+  .version .cita .libro {
+    font-size: 28px;
+  }
+  .version .cita .autor {
+    font-size: 18px;
+  }
+}
